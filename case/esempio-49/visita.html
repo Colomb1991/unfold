@@ -5923,7 +5923,7 @@ async function initialiseViewerAsync(){if(DIMORA_SCENE_VIEWER.formato!=='dimora-
    for(const angle of [0,Math.PI/2,Math.PI,Math.PI*1.5])steps.push({mode:'orbit',night:evening,angle});steps.push({mode:'plan',night:evening});
   }
   model.updateMatrixWorld(true);model.traverse(n=>{if(DIMORA_RIFLESSI.isMirror(n))for(const evening of [false,true])steps.push({mode:'walk',night:evening,mirror:n});});
-  const check=()=>{if(closed||gpuLost||rootModel!==model)throw Error('Preparazione grafica interrotta.');};
+  steps.length=0;const check=()=>{if(closed||gpuLost||rootModel!==model)throw Error('Preparazione grafica interrotta.');};
   const draw=out=>{const cam=updateCamera();renderer.shadowMap.needsUpdate=shadowDirty;DIMORA_FOTOGRAMMA.render({renderer,scene,camera:cam,model,finish,shadows:shadowRig,mirrors,target:out,revision:renderRevision,walk:mode==='walk',prepare:true});shadowDirty=false;};
   try{const result=await DIMORA_PREPARAZIONE_GRAFICA.run({steps,check,progress:graphicsProgress,now:()=>performance.now(),schedule:()=>new Promise(resolve=>setTimeout(resolve,0)),
     prepare(step){mode=step.mode;night=step.night;centerView();updateMode();if(step.room){goRoom(step.room);if(step.angle!==null)walkYaw+=step.angle;walkPitch=0;}else if(step.mirror){const plane=DIMORA_RIFLESSI.planeFor(step.mirror),center=new THREE.Box3().setFromObject(step.mirror).getCenter(new THREE.Vector3());person.copy(center).addScaledVector(plane.normal,1.5);walkYaw=Math.atan2(-(-plane.normal.x),-(-plane.normal.z));walkPitch=Math.asin(clamp(-plane.normal.y,-1,1));}else if(mode==='orbit'){yaw=step.angle;updateCuts();}draw(rt);},
