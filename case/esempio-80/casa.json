@@ -2,17 +2,42 @@
  "slug": "esempio-80",
  "nome": "Trilocale di esempio",
  "mq": 76,
+ "mqAnnuncio": null,
  "ambienti": [
-  "Camera matrimoniale",
-  "Camera singola",
-  "Bagno",
-  "Disimpegno",
-  "Alcova cucina",
-  "Cucina e pranzo",
-  "Soggiorno e ingresso"
+  {
+   "nome": "Camera matrimoniale",
+   "mq": 15.7
+  },
+  {
+   "nome": "Camera singola",
+   "mq": 14.4
+  },
+  {
+   "nome": "Bagno",
+   "mq": 8
+  },
+  {
+   "nome": "Disimpegno",
+   "mq": 3
+  },
+  {
+   "nome": "Alcova cucina",
+   "mq": 3.2
+  },
+  {
+   "nome": "Cucina e pranzo",
+   "mq": 15.4
+  },
+  {
+   "nome": "Soggiorno e ingresso",
+   "mq": 16.6
+  }
  ],
  "zona": "Livorno",
  "agenzia": "",
+ "annuncio": "",
+ "dettagli": [],
+ "visibilita": "vetrina",
  "esempio": true,
  "piantina": "<svg viewBox=\"-20 -20 820 1020\" aria-hidden=\"true\" fill=\"rgba(255,255,255,0.07)\" stroke=\"currentColor\" stroke-width=\"7\" stroke-linejoin=\"round\"><polygon points=\"0,0 406,0 406,386 0,386\"/><polygon points=\"406,0 780,0 780,386 406,386\"/><polygon points=\"0,386 306,386 306,648 0,648\"/><polygon points=\"306,386 536,386 536,518 306,518\"/><polygon points=\"536,386 780,386 780,518 536,518\"/><polygon points=\"446,518 780,518 780,980 446,980\"/><polygon points=\"306,518 446,518 446,980 0,980 0,648 306,648\"/></svg>",
  "aggiunta": "2026-11-26"

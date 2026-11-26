@@ -15,16 +15,17 @@
 <meta property="og:url" content="https://colomb1991.github.io/unfold/case/esempio-80/">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23090F14'/%3E%3Cpath d='M18 14h22a8 8 0 0 1 8 8v20a8 8 0 0 1-8 8H18z' fill='%23F0763C' transform='rotate(-8 32 32)'/%3E%3C/svg%3E">
-<link rel="stylesheet" href="../../stile.css">
+<link rel="stylesheet" href="../../stile.css?v=6">
 </head>
 <body>
 <div class="dentro">
-<header class="testata"><a class="marchio" href="../../">Unfold</a><nav><a href="../../#case">Le case</a><a href="../../#prezzi">Prezzi</a></nav></header>
+<header class="testata"><a class="marchio" href="../../">Unfold</a><nav><a href="../../case/">Le case</a><a href="../../#prezzi">Prezzi</a><a href="../../#contatti">Contatti</a></nav></header>
 <main class="scheda">
   <div class="scheda__capo">
     <p class="occhiello">La casa in 3D</p>
     <h1>Trilocale di esempio</h1>
-    <ul class="dati"><li>76 m²</li><li>7 ambienti</li><li>Livorno</li><li>Esempio dimostrativo</li></ul>
+    <ul class="dati"><li>76 m² calpestabili</li><li>7 ambienti</li><li>Livorno</li><li>Esempio dimostrativo</li></ul>
+    
   </div>
   <figure class="filmato">
     <video controls playsinline preload="metadata" poster="video/visita.jpg" src="video/visita.mp4"></video>
@@ -53,7 +54,14 @@
     <p class="sotto-confronto">Trascina la linea. Sono immagini del modello 3D, non fotografie.</p>
   </section>
   <section class="blocco">
-    <div class="capo"><p class="occhiello">Le immagini</p><h2>Da mettere <em>nell'annuncio.</em></h2></div>
+    <div class="riquadro riquadro--forte">
+      <p class="occhiello">Per le agenzie</p>
+      <h2>Qui c'è <em>la tua agenzia.</em></h2>
+      <p class="nota">In questo punto chi guarda la casa trova il tuo nome e i pulsanti per chiamarti, scriverti su WhatsApp e aprire il tuo annuncio.</p>
+    </div>
+  </section>
+  <section class="blocco">
+    <div class="capo"><p class="occhiello">Le immagini</p><h2>La casa, <em>anche di sera.</em></h2></div>
     <div class="galleria"><figure><img src="img/alto-sera.jpg" alt="Trilocale di esempio: di sera" loading="lazy"><figcaption>Di sera</figcaption></figure></div>
   </section>
   <section class="blocco">
@@ -68,17 +76,18 @@
         </div>
       </div>
     </div>
-    <p class="nota">Dentro la visita: <strong>Vuota / Arredata</strong>, <strong>Vista 3D</strong>, <strong>Pianta</strong>, <strong>Esplora</strong> per camminare, <strong>Giorno / Sera</strong>. <a href="visita.html?variante=dopo&v=3">Aprila a tutto schermo</a>.</p>
+    <p class="nota">Dentro la visita: <strong>Vuota / Arredata</strong>, <strong>Vista 3D</strong>, <strong>Pianta</strong>, <strong>Esplora</strong> per camminare, <strong>Giorno / Sera</strong>. <a href="visita.html?variante=dopo&v=6">Aprila a tutto schermo</a>.</p>
   </section>
   <section class="blocco">
     <div class="due">
       <div class="riquadro">
         <h3>Gli ambienti</h3>
-        <ul><li>Camera matrimoniale</li><li>Camera singola</li><li>Bagno</li><li>Disimpegno</li><li>Alcova cucina</li><li>Cucina e pranzo</li><li>Soggiorno e ingresso</li></ul>
+        <ul class="ambienti"><li><span>Camera matrimoniale</span><span>16 m²</span></li><li><span>Camera singola</span><span>14 m²</span></li><li><span>Bagno</span><span>8 m²</span></li><li><span>Disimpegno</span><span>3 m²</span></li><li><span>Alcova cucina</span><span>3,2 m²</span></li><li><span>Cucina e pranzo</span><span>15 m²</span></li><li><span>Soggiorno e ingresso</span><span>17 m²</span></li></ul>
+        <p class="nota">Superficie calpestabile del modello: 76 m².</p>
       </div>
       <div class="riquadro">
-        <h3>La tua agenzia</h3>
-        <p class="nota">Qui compaiono il nome e i contatti di chi segue la casa.</p>
+        <h3>Manda questa casa</h3>
+        <p class="nota">A chi vuoi fargliela vedere: si apre dal telefono, senza installare niente.</p>
         <div class="fila">
           <button class="btn btn--vetro" type="button" id="copia">Copia il link</button>
           <a class="btn btn--vetro" id="whatsapp" target="_blank" rel="noopener noreferrer" href="#">Manda su WhatsApp</a>
@@ -87,10 +96,12 @@
     </div>
   </section>
 </main>
-<footer class="piede"><p>Unfold · Livorno</p><p>Arredo virtuale a scopo illustrativo. Le misure vanno sempre verificate sul posto.</p></footer>
+<footer class="piede"><p><a href="../../">Unfold</a> · Livorno</p>
+<p class="piede__voci"><a href="../../case/">Le case</a><a href="../../#come">Come funziona</a><a href="../../#prezzi">Prezzi</a><a href="../../#contatti">Contatti</a></p><p>Arredo virtuale a scopo illustrativo. Le misure vanno sempre verificate sul posto.</p></footer>
 </div>
-<script src="../../giro.js?v=4"></script>
-<script src="../../confronto.js"></script>
-<script src="../../casa.js?v=3"></script>
+
+<script src="../../giro.js?v=6"></script>
+<script src="../../confronto.js?v=6"></script>
+<script src="../../casa.js?v=6"></script>
 </body>
 </html>
