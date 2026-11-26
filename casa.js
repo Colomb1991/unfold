@@ -9,7 +9,7 @@
     var f = document.createElement('iframe');
     f.title = 'Visita 3D della casa';
     f.allow = 'fullscreen';
-    f.src = 'visita.html?variante=' + encodeURIComponent(variante) + '&modo=vista&luce=giorno';
+    f.src = 'visita.html?variante=' + encodeURIComponent(variante) + '&modo=vista&luce=giorno&v=3';
     box.textContent = '';
     box.appendChild(f);
     f.focus();
