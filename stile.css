@@ -31,7 +31,7 @@ img { display: block; max-width: 100%; }
 .marchio { font-family: "Outfit", sans-serif; font-size: 25px; font-weight: 500; letter-spacing: 0.01em; text-decoration: none; display: inline-flex; align-items: center; gap: 11px; }
 .marchio::before { content: ""; width: 23px; height: 23px; border-radius: 7px 7px 7px 0; background: linear-gradient(135deg, var(--rame-2), var(--rame-scuro)); transform: rotate(-8deg); box-shadow: 0 0 24px rgba(240, 118, 60, 0.55); }
 .testata nav { display: flex; gap: 4px; }
-.testata nav a { text-decoration: none; font-weight: 600; font-size: 15px; padding: 10px 15px; border-radius: 999px; color: var(--testo-2); }
+.testata nav a { text-decoration: none; font-weight: 600; font-size: 15px; padding: 10px 15px; border-radius: 999px; color: var(--testo-2); white-space: nowrap; }
 .testata nav a:hover { background: var(--vetro-2); color: var(--testo); }
 
 /* pulsanti */
@@ -133,11 +133,16 @@ section.blocco { padding: clamp(54px, 9vw, 120px) 0 0; display: grid; gap: clamp
 
 @media (max-width: 600px) {
   .btn { width: 100%; }
-  .testata nav a:first-child { display: none; }
+  /* Sul telefono le tre voci restano tutte: si stringono marchio e voci. */
+  .marchio { font-size: 22px; gap: 8px; }
+  .marchio::before { width: 20px; height: 20px; }
+  .testata nav { gap: 0; }
+  .testata nav a { font-size: 14px; padding: 9px 8px; }
   .confronto { aspect-ratio: 4 / 3.4; }
   .confronto__mano { width: 46px; height: 46px; margin: -23px 0 0 -23px; font-size: 15px; }
   .numeri span { padding: 0 4px; }
 }
+@media (max-width: 350px) { .testata nav a:nth-child(2) { display: none; } }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .btn, .casa, .casa__pianta img { transition: none; } }
 
 /* gira la casa: immagini da piu' angoli, niente da calcolare sul telefono */
