@@ -151,3 +151,16 @@ section.blocco { padding: clamp(54px, 9vw, 120px) 0 0; display: grid; gap: clamp
 .giro__frecce button { width: 52px; height: 52px; border-radius: 50%; border: 1px solid var(--linea); background: rgba(9, 15, 20, 0.78); color: #FFF; font: 400 26px/1 "Outfit", sans-serif; cursor: pointer; backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); }
 .giro__aiuto { position: absolute; left: 14px; bottom: 18px; padding: 8px 14px; border-radius: 999px; font-size: 12px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; background: rgba(9, 15, 20, 0.7); border: 1px solid var(--linea); pointer-events: none; }
 @media (max-width: 600px) { .giro { aspect-ratio: 1 / 1.02; } .giro__aiuto { font-size: 11px; } }
+
+/* filmati: la casa che nasce dalla planimetria e la visita camminando. Sono verticali, come il telefono. */
+.filmato { position: relative; margin: 0 auto; width: min(100%, 46vh, 420px); aspect-ratio: 9 / 16; border-radius: calc(var(--raggio) + 6px); overflow: hidden; border: 1px solid var(--linea); background: #ECEAF3; box-shadow: 0 40px 120px rgba(0, 0, 0, 0.6), 0 0 0 8px rgba(255, 255, 255, 0.04); }
+.filmato video { display: block; width: 100%; height: 100%; object-fit: cover; background: #ECEAF3; }
+.filmato__eti { position: absolute; top: 14px; left: 14px; padding: 7px 14px; border-radius: 999px; font-size: 12px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; background: rgba(9, 15, 20, 0.72); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border: 1px solid var(--linea); pointer-events: none; }
+.apertura--due { align-items: center; }
+.apertura__testo { display: grid; gap: clamp(20px, 3vw, 30px); }
+@media (min-width: 900px) {
+  .apertura--due { grid-template-columns: 1.15fr 0.85fr; gap: 48px; }
+  .apertura--due .filmato { width: min(100%, 44vh, 400px); }
+  .apertura--due h1 { font-size: clamp(46px, 6.4vw, 96px); }
+}
+@media (max-width: 899px) { .filmato { width: min(100%, 380px); } }

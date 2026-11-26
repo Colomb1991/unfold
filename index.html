@@ -22,7 +22,8 @@
 <header class="testata"><a class="marchio" href="./">Unfold</a><nav><a href="#case">Le case</a><a href="#prezzi">Prezzi</a><a href="#domande">Domande</a></nav></header>
 
 <main>
-  <section class="apertura">
+  <section class="apertura apertura--due">
+   <div class="apertura__testo">
     <p class="occhiello">Livorno · per le agenzie immobiliari</p>
     <h1>La casa in 3D,<br><em>prima di entrarci.</em></h1>
     <p class="sotto">Ci dai la planimetria. In 48 ore la casa esiste: com'è oggi, vuota, e come potrebbe venire, arredata. Un link da mandare al proprietario e a chi cerca casa.</p>
@@ -30,7 +31,14 @@
       <a class="btn" href="case/esempio-80/">Entra in una casa</a>
       <a class="btn btn--vetro" href="#prezzi">Da 49 € a casa</a>
     </div>
+   </div>
+   <figure class="filmato">
+    <video data-parte-da-solo autoplay muted loop playsinline preload="auto" poster="case/esempio-80/video/nascita.jpg" src="case/esempio-80/video/nascita.mp4"></video>
+    <figcaption class="filmato__eti">Dalla planimetria alla casa</figcaption>
+   </figure>
   </section>
+
+  <div class="capo" style="margin-bottom:22px"><p class="occhiello">Prima e dopo</p><h2>Vuota. <em>Arredata.</em></h2></div>
 
   <div class="confronto">
     <img src="case/esempio-80/img/alto-arredata.jpg" alt="Un trilocale di esempio arredato, visto dall'alto">
@@ -122,6 +130,7 @@
 
 <footer class="piede"><p>Unfold · Livorno</p><p>Arredo virtuale a scopo illustrativo. Le misure vanno sempre verificate sul posto.</p></footer>
 </div>
+<script src="filmati.js"></script>
 <script src="confronto.js"></script>
 </body>
 </html>
