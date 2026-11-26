@@ -4,52 +4,72 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
+<meta name="theme-color" content="#090F14">
 <title>Unfold · La casa in 3D, vuota e arredata</title>
 <meta name="description" content="Dalla planimetria al modello 3D della casa: vuota, e arredata come potrebbe venire. Per le agenzie immobiliari di Livorno.">
 <link rel="stylesheet" href="stile.css">
 </head>
 <body>
 <div class="dentro">
-<header class="testata"><a class="marchio" href="./">Unfold</a><nav><a href="#case">Le case</a><a href="#agenzie">Per le agenzie</a></nav></header>
+<header class="testata"><a class="marchio" href="./">Unfold</a><nav><a href="#case">Le case</a><a href="#prezzi">Prezzi</a></nav></header>
 
 <main>
   <section class="apertura">
     <p class="occhiello">Livorno · per le agenzie immobiliari</p>
-    <h1>La casa in 3D,<br>prima ancora di entrarci.</h1>
-    <p class="sotto">Dalla planimetria al modello 3D: com'è oggi, vuota, e come potrebbe venire, arredata. Un link da mandare al proprietario e a chi cerca casa.</p>
+    <h1>La casa in 3D,<br><em>prima di entrarci.</em></h1>
+    <p class="sotto">Ci dai la planimetria. In 48 ore la casa esiste: com'è oggi, vuota, e come potrebbe venire, arredata. Un link da mandare al proprietario e a chi cerca casa.</p>
     <div class="fila">
-      <a class="btn" href="#case">Guarda un esempio</a>
-      <a class="btn btn--chiaro" href="#come">Come funziona</a>
+      <a class="btn" href="case/esempio-80/">Entra in una casa</a>
+      <a class="btn btn--vetro" href="#prezzi">Da 49 € a casa</a>
+    </div>
+  </section>
+
+  <div class="confronto">
+    <img src="case/esempio-80/img/alto-arredata.jpg" alt="Un trilocale di esempio arredato, visto dall'alto">
+    <img class="confronto__sopra" src="case/esempio-80/img/alto-vuota.jpg" alt="Lo stesso trilocale vuoto">
+    <span class="confronto__eti confronto__eti--a">Vuota</span><span class="confronto__eti confronto__eti--b">Arredata</span>
+    <span class="confronto__mano" aria-hidden="true">‹›</span>
+    <input type="range" min="0" max="100" value="50" step="0.1" aria-label="Trascina per confrontare la casa vuota e arredata">
+  </div>
+  <p class="sotto-confronto" style="margin-top:14px">Trascina la linea: la stessa casa, vuota e arredata. Sono immagini della visita 3D, non fotografie.</p>
+
+  <section class="blocco" style="padding-top:clamp(40px,7vw,90px)">
+    <div class="numeri">
+      <div><b>48<small> ore</small></b><span>dalla planimetria al link</span></div>
+      <div><b>49<small> €</small></b><span>a casa, tutto compreso</span></div>
+      <div><b>0</b><span>sopralluoghi</span></div>
     </div>
   </section>
 
   <section class="blocco" id="come">
-    <h2>Come funziona</h2>
+    <div class="capo"><p class="occhiello">Come funziona</p><h2>Tre passi. <em>Il resto lo facciamo noi.</em></h2></div>
     <div class="griglia">
-      <div class="passo"><span class="num">1</span><h3>Ci dai la planimetria</h3><p>Basta la pianta con le misure, anche una foto. Non serve un sopralluogo.</p></div>
-      <div class="passo"><span class="num">2</span><h3>Costruiamo la casa</h3><p>Il modello 3D con le stanze vere: vuota, e arredata nello stile che scegli.</p></div>
-      <div class="passo"><span class="num">3</span><h3>Ricevi il link</h3><p>Una pagina della casa con la visita 3D dentro. Si apre dal telefono, senza installare niente.</p></div>
+      <div class="passo"><span class="num">1</span><h3>Ci dai la planimetria</h3><p>Basta la pianta con le misure, anche in foto dal telefono. Niente sopralluogo.</p></div>
+      <div class="passo"><span class="num">2</span><h3>Costruiamo la casa</h3><p>Il modello 3D con le stanze vere: vuota, e arredata nello stile che scegli tu.</p></div>
+      <div class="passo"><span class="num">3</span><h3>Ricevi il link</h3><p>La pagina della casa con la visita 3D dentro. Si apre dal telefono, senza installare niente.</p></div>
     </div>
   </section>
 
   <section class="blocco" id="case">
-    <h2>Le case</h2>
+    <div class="capo"><p class="occhiello">Le case</p><h2>Entra. <em>Girala tutta.</em></h2></div>
     <div class="griglia">
 <!-- CASE:INIZIO -->
-<a class="casa" href="case/esempio-49/">
-  <div class="casa__pianta"><svg viewBox="-20 -20 800 650" aria-hidden="true" fill="rgba(255,255,255,0.07)" stroke="currentColor" stroke-width="7" stroke-linejoin="round"><polygon points="0,0 364,0 364,291 0,291"/><polygon points="0,291 364,291 364,502 147,502 147,610 0,610"/><polygon points="147,502 364,502 364,610 147,610"/><polygon points="364,0 760,0 760,388 364,388"/><polygon points="364,388 476,388 476,610 364,610"/><polygon points="476,388 760,388 760,610 476,610"/></svg></div>
-  <div class="casa__testo">
-    <span class="etichetta">Esempio</span>
-    <h3>Bilocale di esempio</h3>
-    <span>46 m² · 6 ambienti · Livorno</span>
-  </div>
-</a>
 <a class="casa" href="case/esempio-80/">
-  <div class="casa__pianta"><svg viewBox="-20 -20 820 1020" aria-hidden="true" fill="rgba(255,255,255,0.07)" stroke="currentColor" stroke-width="7" stroke-linejoin="round"><polygon points="0,0 406,0 406,386 0,386"/><polygon points="406,0 780,0 780,386 406,386"/><polygon points="0,386 306,386 306,648 0,648"/><polygon points="306,386 536,386 536,518 306,518"/><polygon points="536,386 780,386 780,518 536,518"/><polygon points="446,518 780,518 780,980 446,980"/><polygon points="306,518 446,518 446,980 0,980 0,648 306,648"/></svg></div>
+  <div class="casa__pianta"><img src="case/esempio-80/img/alto-arredata.jpg" alt="" loading="lazy"></div>
   <div class="casa__testo">
     <span class="etichetta">Esempio</span>
     <h3>Trilocale di esempio</h3>
     <span>76 m² · 7 ambienti · Livorno</span>
+    <span class="casa__vai">Entra nella casa →</span>
+  </div>
+</a>
+<a class="casa" href="case/esempio-49/">
+  <div class="casa__pianta"><img src="case/esempio-49/img/alto-arredata.jpg" alt="" loading="lazy"></div>
+  <div class="casa__testo">
+    <span class="etichetta">Esempio</span>
+    <h3>Bilocale di esempio</h3>
+    <span>46 m² · 6 ambienti · Livorno</span>
+    <span class="casa__vai">Entra nella casa →</span>
   </div>
 </a>
 <!-- CASE:FINE -->
@@ -57,17 +77,31 @@
   </section>
 
   <section class="blocco" id="agenzie">
-    <h2>Per le agenzie</h2>
+    <div class="capo"><p class="occhiello">Per le agenzie</p><h2>Il proprietario <em>sceglie te.</em></h2></div>
     <div class="griglia">
-      <div class="passo"><h3>Prendi l'incarico</h3><p>Al proprietario fai vedere la sua casa arredata, prima ancora di metterla in vendita.</p></div>
-      <div class="passo"><h3>Vendi anche il vuoto</h3><p>Una casa vuota o datata si capisce poco dalle foto. In 3D chi compra vede come può diventare.</p></div>
-      <div class="passo"><h3>Meno visite a vuoto</h3><p>Chi viene a vederla l'ha già girata stanza per stanza dal telefono.</p></div>
+      <div class="passo"><h3>Prendi l'incarico</h3><p>Al proprietario fai vedere casa sua arredata, prima ancora di metterla in vendita.</p></div>
+      <div class="passo"><h3>Vendi anche il vuoto</h3><p>Una casa vuota o datata in foto dice poco. In 3D chi compra vede come può diventare.</p></div>
+      <div class="passo"><h3>Non cambi niente</h3><p>Resti sui portali che usi già. Il link lo mandi ai clienti, le immagini le metti nell'annuncio.</p></div>
     </div>
-    <p class="nota">Il link lo usi dove hai già i tuoi clienti: nell'annuncio, su WhatsApp, sui social.</p>
   </section>
+
+  <section class="blocco" id="prezzi">
+    <div class="capo"><p class="occhiello">Prezzi di lancio</p><h2>La casa intera, <em>al prezzo di una foto.</em></h2></div>
+    <div class="prezzi">
+      <div class="prezzo"><p class="occhiello">Una casa</p><p class="cifra">49<small> €</small></p><h3>Casa 3D</h3><p>Vuota e arredata, pagina con il link, immagini per l'annuncio. Fino a 90 m².</p></div>
+      <div class="prezzo prezzo--forte"><p class="occhiello">Il più scelto</p><p class="cifra">199<small> €</small></p><h3>Pacchetto 5 case</h3><p>Meno di 40 € a casa. Le usi quando vuoi, entro 12 mesi.</p></div>
+      <div class="prezzo"><p class="occhiello">Per chi ne fa tante</p><p class="cifra">349<small> €</small></p><h3>Pacchetto 10 case</h3><p>Meno di 35 € a casa. Entro 12 mesi.</p></div>
+    </div>
+  </section>
+
+  <div class="fascia">
+    <h2>La prima casa è gratis.</h2>
+    <p>Dacci la planimetria di una casa che hai in vendita: in 48 ore hai il link. Se non ti serve, finisce lì.</p>
+  </div>
 </main>
 
 <footer class="piede"><p>Unfold · Livorno</p><p>Arredo virtuale a scopo illustrativo. Le misure vanno sempre verificate sul posto.</p></footer>
 </div>
+<script src="confronto.js"></script>
 </body>
 </html>

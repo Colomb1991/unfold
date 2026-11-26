@@ -10,41 +10,59 @@
 </head>
 <body>
 <div class="dentro">
-<header class="testata"><a class="marchio" href="../../">Unfold</a><nav><a href="../../#case">Le case</a><a href="../../#agenzie">Per le agenzie</a></nav></header>
+<header class="testata"><a class="marchio" href="../../">Unfold</a><nav><a href="../../#case">Le case</a><a href="../../#prezzi">Prezzi</a></nav></header>
 <main class="scheda">
   <div class="scheda__capo">
     <p class="occhiello">Visita 3D</p>
     <h1>Trilocale di esempio</h1>
     <ul class="dati"><li>76 m²</li><li>7 ambienti</li><li>Livorno</li><li>Esempio dimostrativo</li></ul>
   </div>
-  <div class="visita" id="visita">
+  <div class="visita" id="visita" style="background-image:url(img/alto-arredata.jpg)">
     <div class="visita__invito">
       <h2>Entra in casa</h2>
       <p>Guardala vuota e arredata, dall'alto, in pianta o camminandoci dentro. La prima apertura può richiedere fino a un minuto.</p>
       <div class="fila">
         <button class="btn" type="button" data-apri="dopo">Apri arredata</button>
-        <button class="btn btn--scuro" type="button" data-apri="prima">Apri vuota</button>
+        <button class="btn btn--vetro" type="button" data-apri="prima">Apri vuota</button>
       </div>
     </div>
   </div>
   <p class="nota">Dentro la visita: <strong>Vuota / Arredata</strong>, <strong>Vista 3D</strong>, <strong>Pianta</strong>, <strong>Esplora</strong> per camminare, <strong>Giorno / Sera</strong>. <a href="visita.html?variante=dopo">Aprila a tutto schermo</a>.</p>
-  <div class="due">
-    <div class="riquadro">
-      <h3>Gli ambienti</h3>
-      <ul><li>Camera matrimoniale</li><li>Camera singola</li><li>Bagno</li><li>Disimpegno</li><li>Alcova cucina</li><li>Cucina e pranzo</li><li>Soggiorno e ingresso</li></ul>
-    </div>
-    <div class="riquadro">
-      <h3>La tua agenzia</h3>
-      <p class="nota">Qui compaiono il nome e i contatti dell'agenzia che segue la casa.</p>
-      <div class="fila">
-        <button class="btn btn--chiaro" type="button" id="copia">Copia il link</button>
-        <a class="btn btn--chiaro" id="whatsapp" target="_blank" rel="noopener noreferrer" href="#">Manda su WhatsApp</a>
+  <section class="blocco">
+    <div class="capo"><p class="occhiello">Prima e dopo</p><h2>La stessa casa, <em>vuota e arredata.</em></h2></div>
+    <div class="confronto">
+    <img src="img/alto-arredata.jpg" alt="Trilocale di esempio: arredata">
+    <img class="confronto__sopra" src="img/alto-vuota.jpg" alt="Trilocale di esempio: vuota">
+    <span class="confronto__eti confronto__eti--a">Vuota</span><span class="confronto__eti confronto__eti--b">Arredata</span>
+    <span class="confronto__mano" aria-hidden="true">‹›</span>
+    <input type="range" min="0" max="100" value="50" step="0.1" aria-label="Trascina per confrontare la casa vuota e arredata">
+  </div>
+    <p class="sotto-confronto">Trascina la linea. Sono immagini della visita 3D, non fotografie.</p>
+  </section>
+  <section class="blocco">
+    <div class="capo"><p class="occhiello">Le immagini</p><h2>Da mettere <em>nell'annuncio.</em></h2></div>
+    <div class="galleria"><figure><img src="img/alto-sera.jpg" alt="Trilocale di esempio: di sera" loading="lazy"><figcaption>Di sera</figcaption></figure></div>
+  </section>
+  <section class="blocco">
+    <div class="due">
+      <div class="riquadro">
+        <h3>Gli ambienti</h3>
+        <ul><li>Camera matrimoniale</li><li>Camera singola</li><li>Bagno</li><li>Disimpegno</li><li>Alcova cucina</li><li>Cucina e pranzo</li><li>Soggiorno e ingresso</li></ul>
+      </div>
+      <div class="riquadro">
+        <h3>La tua agenzia</h3>
+        <p class="nota">Qui compaiono il nome e i contatti di chi segue la casa.</p>
+        <div class="fila">
+          <button class="btn btn--vetro" type="button" id="copia">Copia il link</button>
+          <a class="btn btn--vetro" id="whatsapp" target="_blank" rel="noopener noreferrer" href="#">Manda su WhatsApp</a>
+        </div>
       </div>
     </div>
-  </div>
+  </section>
 </main>
 <footer class="piede"><p>Unfold · Livorno</p><p>Arredo virtuale a scopo illustrativo. Le misure vanno sempre verificate sul posto.</p></footer>
 </div>
+<script src="../../confronto.js"></script>
 <script src="../../casa.js"></script>
 </body>
 </html>
