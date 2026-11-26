@@ -26,7 +26,16 @@
     <h1>Trilocale di esempio</h1>
     <ul class="dati"><li>76 m²</li><li>7 ambienti</li><li>Livorno</li><li>Esempio dimostrativo</li></ul>
   </div>
-
+  <div class="giro" data-base="img/giro/" data-n="8" data-variante="arredata">
+    <img class="giro__img" src="img/giro/arredata-0.jpg" alt="Trilocale di esempio vista dall'alto" draggable="false">
+    <div class="giro__scelta" role="group" aria-label="Vuota o arredata">
+      <button type="button" data-variante-scelta="vuota" aria-pressed="false">Vuota</button>
+      <button type="button" data-variante-scelta="arredata" aria-pressed="true">Arredata</button>
+    </div>
+    <span class="giro__aiuto">Trascina per girarla</span>
+    <div class="giro__frecce"><button type="button" data-gira="-1" aria-label="Gira a sinistra">‹</button><button type="button" data-gira="1" aria-label="Gira a destra">›</button></div>
+  </div>
+  <p class="sotto-confronto">Trascina col dito per girare la casa. Tocca <strong>Vuota</strong> o <strong>Arredata</strong> per cambiarla.</p>
   <section class="blocco">
     <div class="capo"><p class="occhiello">Prima e dopo</p><h2>La stessa casa, <em>vuota e arredata.</em></h2></div>
     <div class="confronto">
