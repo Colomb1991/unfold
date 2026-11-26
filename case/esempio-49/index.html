@@ -6,11 +6,11 @@
 <meta name="robots" content="noindex">
 <meta name="theme-color" content="#090F14">
 <title>Bilocale di esempio · Unfold</title>
-<meta name="description" content="Entra nella casa in 3D: guardala vuota e arredata, dall'alto, in pianta o camminandoci dentro.">
+<meta name="description" content="Guarda la casa in 3D: vuota e arredata, da ogni lato.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Unfold">
 <meta property="og:title" content="Bilocale di esempio · Unfold">
-<meta property="og:description" content="Entra nella casa in 3D: guardala vuota e arredata, dall'alto, in pianta o camminandoci dentro.">
+<meta property="og:description" content="Guarda la casa in 3D: vuota e arredata, da ogni lato.">
 <meta property="og:image" content="https://colomb1991.github.io/unfold/case/esempio-49/img/alto-arredata.jpg">
 <meta property="og:url" content="https://colomb1991.github.io/unfold/case/esempio-49/">
 <meta name="twitter:card" content="summary_large_image">
@@ -22,21 +22,11 @@
 <header class="testata"><a class="marchio" href="../../">Unfold</a><nav><a href="../../#case">Le case</a><a href="../../#prezzi">Prezzi</a></nav></header>
 <main class="scheda">
   <div class="scheda__capo">
-    <p class="occhiello">Visita 3D</p>
+    <p class="occhiello">La casa in 3D</p>
     <h1>Bilocale di esempio</h1>
     <ul class="dati"><li>46 m²</li><li>6 ambienti</li><li>Livorno</li><li>Esempio dimostrativo</li></ul>
   </div>
-  <div class="visita" id="visita" style="background-image:url(img/alto-arredata.jpg)">
-    <div class="visita__invito">
-      <h2>Entra in casa</h2>
-      <p>Guardala vuota e arredata, dall'alto, in pianta o camminandoci dentro. La prima apertura può richiedere fino a un minuto.</p>
-      <div class="fila">
-        <button class="btn" type="button" data-apri="dopo">Apri arredata</button>
-        <button class="btn btn--vetro" type="button" data-apri="prima">Apri vuota</button>
-      </div>
-    </div>
-  </div>
-  <p class="nota">Dentro la visita: <strong>Vuota / Arredata</strong>, <strong>Vista 3D</strong>, <strong>Pianta</strong>, <strong>Esplora</strong> per camminare, <strong>Giorno / Sera</strong>. <a href="visita.html?variante=dopo&v=3">Aprila a tutto schermo</a>.</p>
+
   <section class="blocco">
     <div class="capo"><p class="occhiello">Prima e dopo</p><h2>La stessa casa, <em>vuota e arredata.</em></h2></div>
     <div class="confronto">
@@ -46,11 +36,25 @@
     <span class="confronto__mano" aria-hidden="true">‹›</span>
     <input type="range" min="0" max="100" value="50" step="0.1" aria-label="Trascina per confrontare la casa vuota e arredata">
   </div>
-    <p class="sotto-confronto">Trascina la linea. Sono immagini della visita 3D, non fotografie.</p>
+    <p class="sotto-confronto">Trascina la linea. Sono immagini del modello 3D, non fotografie.</p>
   </section>
   <section class="blocco">
     <div class="capo"><p class="occhiello">Le immagini</p><h2>Da mettere <em>nell'annuncio.</em></h2></div>
     <div class="galleria"><figure><img src="img/alto-sera.jpg" alt="Bilocale di esempio: di sera" loading="lazy"><figcaption>Di sera</figcaption></figure></div>
+  </section>
+  <section class="blocco">
+    <div class="capo"><p class="occhiello">Visita 3D completa</p><h2>Camminaci <em>dentro.</em></h2></div>
+    <div class="visita" id="visita" style="background-image:url(img/alto-arredata.jpg)">
+      <div class="visita__invito">
+        <h2>Entra in casa</h2>
+        <p>La visita dal vivo: giri dove vuoi, stanza per stanza, di giorno e di sera. Dà il meglio da computer; sul telefono la prima apertura può essere lenta.</p>
+        <div class="fila">
+          <button class="btn" type="button" data-apri="dopo">Apri arredata</button>
+          <button class="btn btn--vetro" type="button" data-apri="prima">Apri vuota</button>
+        </div>
+      </div>
+    </div>
+    <p class="nota">Dentro la visita: <strong>Vuota / Arredata</strong>, <strong>Vista 3D</strong>, <strong>Pianta</strong>, <strong>Esplora</strong> per camminare, <strong>Giorno / Sera</strong>. <a href="visita.html?variante=dopo&v=3">Aprila a tutto schermo</a>.</p>
   </section>
   <section class="blocco">
     <div class="due">
@@ -71,6 +75,7 @@
 </main>
 <footer class="piede"><p>Unfold · Livorno</p><p>Arredo virtuale a scopo illustrativo. Le misure vanno sempre verificate sul posto.</p></footer>
 </div>
+<script src="../../giro.js?v=4"></script>
 <script src="../../confronto.js"></script>
 <script src="../../casa.js?v=3"></script>
 </body>

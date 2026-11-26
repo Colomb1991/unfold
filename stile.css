@@ -139,3 +139,15 @@ section.blocco { padding: clamp(54px, 9vw, 120px) 0 0; display: grid; gap: clamp
   .numeri span { padding: 0 4px; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .btn, .casa, .casa__pianta img { transition: none; } }
+
+/* gira la casa: immagini da piu' angoli, niente da calcolare sul telefono */
+.giro { position: relative; border-radius: var(--raggio); overflow: hidden; border: 1px solid var(--linea); background: #E0DFDD; box-shadow: 0 40px 120px rgba(0, 0, 0, 0.55); aspect-ratio: 4 / 3; cursor: grab; touch-action: pan-y; user-select: none; -webkit-user-select: none; }
+.giro--presa { cursor: grabbing; }
+.giro__img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; pointer-events: none; -webkit-user-drag: none; }
+.giro__scelta { position: absolute; top: 14px; left: 14px; display: flex; gap: 4px; padding: 4px; border-radius: 999px; background: rgba(9, 15, 20, 0.78); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border: 1px solid var(--linea); }
+.giro__scelta button { border: 0; border-radius: 999px; min-height: 42px; padding: 0 18px; background: transparent; color: var(--testo-2); font: 700 13px "Manrope", sans-serif; letter-spacing: 0.12em; text-transform: uppercase; cursor: pointer; }
+.giro__scelta button[aria-pressed="true"] { background: linear-gradient(180deg, var(--rame-2), var(--rame)); color: #1B0E06; }
+.giro__frecce { position: absolute; right: 14px; bottom: 14px; display: flex; gap: 8px; }
+.giro__frecce button { width: 52px; height: 52px; border-radius: 50%; border: 1px solid var(--linea); background: rgba(9, 15, 20, 0.78); color: #FFF; font: 400 26px/1 "Outfit", sans-serif; cursor: pointer; backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); }
+.giro__aiuto { position: absolute; left: 14px; bottom: 18px; padding: 8px 14px; border-radius: 999px; font-size: 12px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; background: rgba(9, 15, 20, 0.7); border: 1px solid var(--linea); pointer-events: none; }
+@media (max-width: 600px) { .giro { aspect-ratio: 1 / 1.02; } .giro__aiuto { font-size: 11px; } }
