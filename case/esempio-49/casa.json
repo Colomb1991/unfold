@@ -1,0 +1,18 @@
+{
+ "slug": "esempio-49",
+ "nome": "Bilocale di esempio",
+ "mq": 46,
+ "ambienti": [
+  "Cucina",
+  "Soggiorno",
+  "Ingresso",
+  "Camera matrimoniale",
+  "Disimpegno",
+  "Bagno"
+ ],
+ "zona": "Livorno",
+ "agenzia": "",
+ "esempio": true,
+ "piantina": "<svg viewBox=\"-20 -20 800 650\" aria-hidden=\"true\" fill=\"rgba(255,255,255,0.07)\" stroke=\"currentColor\" stroke-width=\"7\" stroke-linejoin=\"round\"><polygon points=\"0,0 364,0 364,291 0,291\"/><polygon points=\"0,291 364,291 364,502 147,502 147,610 0,610\"/><polygon points=\"147,502 364,502 364,610 147,610\"/><polygon points=\"364,0 760,0 760,388 364,388\"/><polygon points=\"364,388 476,388 476,610 364,610\"/><polygon points=\"476,388 760,388 760,610 476,610\"/></svg>",
+ "aggiunta": "2026-11-26"
+}

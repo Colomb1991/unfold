@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Trilocale di esempio · Unfold</title>
+<meta name="description" content="Trilocale di esempio: visita 3D, vuota e arredata.">
+<link rel="stylesheet" href="../../stile.css">
+</head>
+<body>
+<div class="dentro">
+<header class="testata"><a class="marchio" href="../../">Unfold</a><nav><a href="../../#case">Le case</a><a href="../../#agenzie">Per le agenzie</a></nav></header>
+<main class="scheda">
+  <div class="scheda__capo">
+    <p class="occhiello">Visita 3D</p>
+    <h1>Trilocale di esempio</h1>
+    <ul class="dati"><li>76 m²</li><li>7 ambienti</li><li>Livorno</li><li>Esempio dimostrativo</li></ul>
+  </div>
+  <div class="visita" id="visita">
+    <div class="visita__invito">
+      <h2>Entra in casa</h2>
+      <p>Guardala vuota e arredata, dall'alto, in pianta o camminandoci dentro. La prima apertura può richiedere fino a un minuto.</p>
+      <div class="fila">
+        <button class="btn" type="button" data-apri="dopo">Apri arredata</button>
+        <button class="btn btn--scuro" type="button" data-apri="prima">Apri vuota</button>
+      </div>
+    </div>
+  </div>
+  <p class="nota">Dentro la visita: <strong>Vuota / Arredata</strong>, <strong>Vista 3D</strong>, <strong>Pianta</strong>, <strong>Esplora</strong> per camminare, <strong>Giorno / Sera</strong>. <a href="visita.html?variante=dopo">Aprila a tutto schermo</a>.</p>
+  <div class="due">
+    <div class="riquadro">
+      <h3>Gli ambienti</h3>
+      <ul><li>Camera matrimoniale</li><li>Camera singola</li><li>Bagno</li><li>Disimpegno</li><li>Alcova cucina</li><li>Cucina e pranzo</li><li>Soggiorno e ingresso</li></ul>
+    </div>
+    <div class="riquadro">
+      <h3>La tua agenzia</h3>
+      <p class="nota">Qui compaiono il nome e i contatti dell'agenzia che segue la casa.</p>
+      <div class="fila">
+        <button class="btn btn--chiaro" type="button" id="copia">Copia il link</button>
+        <a class="btn btn--chiaro" id="whatsapp" target="_blank" rel="noopener noreferrer" href="#">Manda su WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</main>
+<footer class="piede"><p>Unfold · Livorno</p><p>Arredo virtuale a scopo illustrativo. Le misure vanno sempre verificate sul posto.</p></footer>
+</div>
+<script src="../../casa.js"></script>
+</body>
+</html>
